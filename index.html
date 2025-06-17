@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f5f6fa;
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .header {
+      background: #22232a;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+    }
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .header p {
+      font-size: 1.1em;
+      margin: 0 auto;
+      max-width: 900px;
+      line-height: 1.5;
+    }
+    .nav {
+      background: #ffe44c;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto 0 auto;
+      padding: 0 10px 40px 10px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin: 30px 0;
+      padding: 36px 24px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    }
+    .card img {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 12px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .card h2 {
+      font-size: 1.6em;
+      margin: 10px 0 15px 0;
+      font-weight: bold;
+    }
+    .card p, .card .typing {
+      font-size: 1.08em;
+      margin: 0 0 18px 0;
+      color: #444;
+      line-height: 1.5;
+      min-height: 60px;
+    }
+    .typing::after {
+      content: '|';
+      animation: blink 1s infinite;
+      color: #222;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .footer {
+      background: #22232a;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0 10px 0;
+      font-size: 1em;
+      margin-top: 40px;
+    }
+    .contact-links a {
+      color: #22232a;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.2s;
+    }
+    .contact-links a:hover {
+      color: #1a73e8;
+    }
+    @media (max-width: 600px) {
+      .header h1 { font-size: 2em; }
+      .card { padding: 22px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Your Name</h1>
+    <p>
+      Welcome to my personal website!.This website is a test website .I am passionate about web development and design, always eager to learn and grow. All of my professional and contact details are mentioned below
+    </p>
+  </div>
+  <div class="nav">
+    Home
+  </div>
+  <div class="container">
+
+    <!-- About Me Card with Typing Effect and NO Links -->
+    <div class="card">
+      <div id="typing" class="typing"></div>
+    </div>
+
+    <!-- Education Card -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Education Icon">
+      <h2>Education</h2>
+      <p>
+        <b>Studying Bachelors in AI and Robotics</b><br>
+        Kimpo University, South Korea <br>
+        <i>Relevant coursework:</i> Data Structures, Web Development, Database Systems, AI Fundamentals
+      </p>
+    </div>
+
+    <!-- Skills Card -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Skills Icon">
+      <h2>Skills</h2>
+      <p>
+        <b>Languages:</b> HTML, CSS, JavaScript, Python, Java<br>
+        <b>Tools:</b> Git, VS Code, Figma<br>
+        <b>Soft Skills:</b> Communication, Problem-Solving, Teamwork
+      </p>
+    </div>
+
+    <!-- Projects Card -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" alt="Projects Icon">
+      <h2>Projects</h2>
+      <p>
+        <b>Portfolio Website:</b> Designed and built my personal portfolio.<br>
+
+      </p>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact Icon">
+      <h2>Contact</h2>
+      <p>
+        I'm always open to new opportunities and collaborations.<br>
+        <b>Email:</b> dipshikhakhadka9@gmail.com<br>
+        <b>LinkedIn:</b> linkedin.com/in/yourprofile<br>
+        <b>GitHub:</b> github.com/dipshikhakhadka9<br>
+        <b>Phone :<b> 010-12345678
+      </p>
+      <div class="contact-links">
+        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    © 2025 Dipshikha Khadka. All rights reserved.
+  </div>
+
+  <!-- Typing Effect Script -->
+  <script>
+    const text = "Hi! I'm Dipshikha Khadka, a beginner web developer studying bachelors in AI and Robotics at Kimpo University , South Korea. I enjoy coding building functional websites and exploring new technologies. My coding journey is because of my curiosity, creativity, and a desire to solve real-world problems.";
+    const typingDiv = document.getElementById('typing');
+    let idx = 0;
+
+    function typeWriter() {
+      if (idx < text.length) {
+        typingDiv.innerHTML = text.slice(0, idx + 1);
+        idx++;
+        setTimeout(typeWriter, 30); // Adjust speed here
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
